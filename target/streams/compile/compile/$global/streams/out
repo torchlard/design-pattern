@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/lkit/Programming/Scala/proj01/src/main/scala/example/Decorator.scala:4:36: no arguments allowed for nullary method GetArmorIntegrity: ()Double[0m
+[0m[[0m[31merror[0m] [0m[0m  println(armor.GetArmorIntegrity( new Hit("head", 12) ))[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
