@@ -1,8 +1,8 @@
-object Decorator extends App {
-  val armor = new ChainMail(new BasicArmor)
-  println(armor.CalculateDamageFromHit( new Hit("head", 12)  ))
-  println(armor.GetArmorIntegrity() )
-}
+// object Decorator extends App {
+//   val armor = new ChainMail(new BasicArmor)
+//   println(armor.CalculateDamageFromHit( new Hit("head", 12)  ))
+//   println(armor.GetArmorIntegrity() )
+// }
 
 // immutable
 case class Hit (

@@ -1,4 +1,11 @@
-[0m[[0m[31merror[0m] [0m[0m/home/lkit/Programming/Scala/proj01/src/main/scala/example/Decorator.scala:4:36: no arguments allowed for nullary method GetArmorIntegrity: ()Double[0m
-[0m[[0m[31merror[0m] [0m[0m  println(armor.GetArmorIntegrity( new Hit("head", 12) ))[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/lkit/Programming/design-pattern/src/main/scala/example/Flyweight.scala:33:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, Circle)[0m
+[0m[[0m[31merror[0m] [0m[0m      circleMap += (color, circle)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/lkit/Programming/design-pattern/src/main/scala/example/Flyweight.scala:33:28: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Circle[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, Circle)[0m
+[0m[[0m[31merror[0m] [0m[0m      circleMap += (color, circle)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
