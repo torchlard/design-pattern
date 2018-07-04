@@ -1,44 +1,57 @@
-import scala.collection.mutable.HashMap
+// import scala.util.Random
+// import scala.collection.mutable.HashMap
 
-object Flyweight extends App {
+// object Flyweight extends App {
+//   val colors = Array("Red", "Green", "Blue", "White", "Black", "Pink")
 
-}
+//   def getRandomColor = colors(Random.nextInt(colors.length))
 
-trait Shape {
-  def draw(): Unit
-}
+//   for(i <- 0 to 20) {
+//     var circle = ShapeFactory.getCircle(getRandomColor)
+//     circle.setX(Random.nextInt(50))
+//     circle.setY(Random.nextInt(50))
+//     circle.setRadius(Random.nextInt(30))
+//     circle.draw()
+//   }
+  
+// }
 
-class Circle(var color:String) extends Shape {
-  var x: Int
-  var y: Int
-  var radius: Int
+// trait Shape {
+//   def draw(): Unit
+// }
 
-  def setX(xx: Int) = {x = xx}
-  def setY(yy: Int) = {y = yy}
-  def setRadius(rr: Int) = {radius = rr}
+// class Circle(var color:String) extends Shape {
+//   private var x: Int = 0
+//   private var y: Int = 0
+//   private var radius: Int = 0
 
-  def draw() = {
-    println(s"x: $x, y: $y, radius: $radius, color: $color")
-  }
-}
+//   def setX(xx: Int) = {x = xx}
+//   def setY(yy: Int) = {y = yy}
+//   def setRadius(rr: Int) = {radius = rr}
 
-object ShapeFactory {
-  var circleMap: HashMap[String, Circle] = new HashMap()
+//   def draw() = {
+//     println(s"x: $x, y: $y, radius: $radius, color: $color")
+//   }
+// }
 
-  def getCircle(color: String): Shape = {
+// object ShapeFactory {
+//   private var circleMap: HashMap[String, Circle] = new HashMap()
 
-    if (circleMap(color) == null ){
-      val circle = new Circle(color)
+//   def getCircle(color: String): Circle = {
+
+//     if (! (circleMap contains color) ){
+//       val circle = new Circle(color)
       
-      circleMap += (color, circle)
-      println("creating circle of color: "+color)
-      return circle
-    }
+//       circleMap.put(color, circle)
+//       println("creating circle of color: "+color)
+//       return circle
+//     }
 
-    return circleMap(color)
-  }
+//     return circleMap(color)
+//   }
 
-}
+// }
+
 
 
 
