@@ -1,8 +1,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed:Set(/home/lkit/Programming/design-pattern/src/main/scala/example/type_computing.scala, /home/lkit/Programming/design-pattern/src/main/scala/example/Facade.scala, /home/lkit/Programming/design-pattern/src/main/scala/example/type_computing2.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/Iterator.scala, /home/lkit/Programming/design-pattern/src/main/scala/example/ChainOfResponsibility.scala, /home/lkit/Programming/design-pattern/src/main/scala/example/Flyweight.scala, /home/lkit/Programming/design-pattern/src/main/scala/example/Proxy.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set(/home/lkit/Programming/Scala/proj01/src/main/scala/example/Proxy.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/MementoPattern.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/type_computing.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/ObserverPatther.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/Mediator.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/type_computing2.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/Iterator.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/Flyweight.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/IteratorPattern.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/Facade.scala, /home/lkit/Programming/Scala/proj01/src/main/scala/example/Interpreter.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/lkit/Programming/Scala/proj01/src/main/scala/example/StatePattern.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/lkit/Programming/design-pattern/src/main/scala/example/StatePattern.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
@@ -13,18 +13,27 @@
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(StopState, StatePattern, Context, StartState, State)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/lkit/Programming/Scala/proj01/src/main/scala/example/StatePattern.scala)[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /home/lkit/Programming/Scala/proj01/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/lkit/Programming/design-pattern/src/main/scala/example/StatePattern.scala)[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /home/lkit/Programming/design-pattern/target/scala-2.12/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.1.7:compile for Scala 2.12.6[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.1.7:compile for Scala 2.12.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 787d3ed1 for Scala compiler version 2.12.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 7bc10147 for Scala compiler version 2.12.6[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/lkit/.sbt/boot/scala-2.12.6/lib/scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/home/lkit/Programming/Scala/proj01/target/scala-2.12/classes:/home/lkit/.ivy2/cache/com.chuusai/shapeless_2.12/bundles/shapeless_2.12-2.3.3.jar:/home/lkit/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.259882406 s[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/lkit/Programming/design-pattern/target/scala-2.12/classes:/home/lkit/.ivy2/cache/com.chuusai/shapeless_2.12/bundles/shapeless_2.12-2.3.3.jar:/home/lkit/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.721766113 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from StatePattern...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(StatePattern)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(StatePattern)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(StatePattern,ModifiedNames(changes = UsedName(stopState,[Default]), UsedName(clone,[Default]), UsedName(==,[Default]), UsedName(equals,[Default]), UsedName(context,[Default]), UsedName(ne,[Default]), UsedName(main,[Default]), UsedName(!=,[Default]), UsedName(isInstanceOf,[Default]), UsedName(notifyAll,[Default]), UsedName(getClass,[Default]), UsedName(toString,[Default]), UsedName(executionStart,[Default]), UsedName(args,[Default]), UsedName(startState,[Default]), UsedName(##,[Default]), UsedName(finalize,[Default]), UsedName(delayedInit,[Default]), UsedName(wait,[Default]), UsedName(eq,[Default]), UsedName(hashCode,[Default]), UsedName(asInstanceOf,[Default]), UsedName(StatePattern,[Default]), UsedName($isInstanceOf,[Default]), UsedName($init$,[Default]), UsedName($asInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(notify,[Default]))) invalidates 1 classes due to The StatePattern has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(stopState,[Default]), UsedName(clone,[Default]), UsedName(==,[Default]), UsedName(equals,[Default]), UsedName(context,[Default]), UsedName(ne,[Default]), UsedName(main,[Default]), UsedName(!=,[Default]), UsedName(isInstanceOf,[Default]), UsedName(notifyAll,[Default]), UsedName(getClass,[Default]), UsedName(toString,[Default]), UsedName(executionStart,[Default]), UsedName(args,[Default]), UsedName(startState,[Default]), UsedName(##,[Default]), UsedName(finalize,[Default]), UsedName(delayedInit,[Default]), UsedName(wait,[Default]), UsedName(eq,[Default]), UsedName(hashCode,[Default]), UsedName(asInstanceOf,[Default]), UsedName(StatePattern,[Default]), UsedName($isInstanceOf,[Default]), UsedName($init$,[Default]), UsedName($asInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(notify,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(StatePattern)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m

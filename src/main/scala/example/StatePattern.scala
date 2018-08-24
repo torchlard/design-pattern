@@ -1,17 +1,17 @@
 
-object StatePattern extends App {
-  val context = new Context()
-  val startState = new StartState
-  val stopState = new StopState
+// object StatePattern extends App {
+//   val context = new Context()
+//   val startState = new StartState
+//   val stopState = new StopState
 
-  // go to start state
-  startState.doAction(context)
-  println(context.state)
+//   // go to start state
+//   startState.doAction(context)
+//   println(context.state)
   
-  // go to stop state
-  stopState.doAction(context)  
-  println(context.state)
-}
+//   // go to stop state
+//   stopState.doAction(context)  
+//   println(context.state)
+// }
 
 class Context(var state: State = null){}
 

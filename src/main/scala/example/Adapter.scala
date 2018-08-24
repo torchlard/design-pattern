@@ -29,7 +29,7 @@ trait SimpleShip {
   def GoForward()
 }
 
-class ShipAdapter extends SimpleShip with Ship{
+class ShipAdapter extends SimpleShip with Ship {
   
   def TurnLeft() = {
     SetRudderAngleTo(-30)
@@ -50,6 +50,16 @@ class ShipAdapter extends SimpleShip with Ship{
 }
 
 
+object Adapter {
+
+  def main(args: Array[String]): Unit = {
+    val ship = new ShipAdapter
+    ship.TurnLeft()
+    ship.TurnLeft()
+    ship.TurnRight()
+    ship.GoForward()
+  }
+}
 
 
 
