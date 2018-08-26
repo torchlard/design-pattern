@@ -13,7 +13,6 @@ trait AccountService[Account, Amount, Balance] {
 }
 
 
-
 object App extends AccountService {
   def op(no: String) = for {
     _ <- credit(no, BigDecimal(100))
@@ -23,8 +22,8 @@ object App extends AccountService {
   } yield b
 }
 
-
-
+// main
+op("a123").run(AccountRepository)
 
 
 
