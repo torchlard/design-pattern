@@ -25,7 +25,7 @@ object FrontOffice extends App with Logging {
   implicit val system = ActorSystem("front_office")
   val serverConnection = Tcp().outgoingConnection("127.0.0.1", 9982)
 
-  val path = "/Users/debasishghosh/projects/frdomain/src/main/resources/transactions.csv"
+  val path = System.getProperty("user.dir") + "../../../resources/transactions.csv"
   val getLines = () => scala.io.Source.fromFile(path).getLines()
 
   val readLines = Source.fromIterator(getLines).filter(isValid).map(l => ByteString(l + "\n"))
@@ -37,6 +37,7 @@ object FrontOffice extends App with Logging {
   val graph = RunnableGraph.fromGraph(GraphDSL.create() { implicit b =>
     import GraphDSL.Implicits._
 
+    // broadcast in 2 paths
     val broadcast = b.add(Broadcast[ByteString](2))
 
     val heartbeat = Flow[ByteString]
